@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 900px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    width: 200px;
+    padding: 10px 50px;
+    padding-right: 20px;
+    border: 1.5px solid #000;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+    margin-left: 10px;
+    color: #888;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.login-button {
+    width: 150px;
+    padding: 8px;
+    background-color: #bc0a0f;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.login-button span {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.footer-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer-text a {
+    color: #000;
+    font-weight: bold;
+}
+
+.img-container {
+    flex: 1;
+    background-color: #bc0a0f;
+    height: 500px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.banner-text {
+    font-size: 80px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+    .container {
+      width: 700px;
+      flex-direction: column;
+      height: auto;
+    }
+
+    .img-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .banner-text {
+      font-size: 50px;
+    }
+
+    .login-container {
+      padding: 20px;
+    }
+  }
+
+  /* Responsive styles for mobile devices */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      flex-direction: column;
+      height: auto;
+    }
+
+    .img-container {
+      height: 200px;
+      border-radius: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .banner-text {
+      font-size: 36px;
+    }
+
+    .login-container {
+      padding: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 40px;
+    }
+
+    .login-button {
+      width: 100%;
+    }
+  }
+
+  /* Responsive styles for very small mobile screens */
+  @media (max-width: 480px) {
+
+    body {
+        background-color: #bc0a0f;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        height: 700px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .login-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .title {
+        display: flex;
+        margin: 0;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 250px;
+        height: auto;
+    }
+
+    .input-group {
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .input-group input {
+        max-width: 200px;
+        padding: 10px 50px;
+        padding-right: 20px;
+        border-radius: 10px;
+    }
+
+    .login-button {
+        width: 120px;
+        height: 40px;
+        border: 1px solid #000;
+        cursor: pointer;
+        gap: 10px;
+    }
+
+    .login-button span {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .footer-text {
+        font-size: 13px
+    }
+
+    .img-container {
+        display: none;
+    }
+  }
